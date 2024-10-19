@@ -1,11 +1,23 @@
-.Weather {
-  background-color: white;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.first-row {
+  line-height: 20px;
+}
+
+.CityName {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 3px;
+}
+
+.WeatherInfo {
+  font-size: 15px;
+}
+
+.TodayTemperature {
+  font-size: 30px;
 }
