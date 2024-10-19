@@ -5,9 +5,8 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-        <h1>Weather App</h1>
         <Weather />
-        <footer>
+        <footer className="text-center">
           This Project was coded by Ava Khalili and is{" "}
           <a
             href="https://github.com/AvaKhA/weather-react-final-project"

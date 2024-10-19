@@ -1,3 +1,11 @@
 .Weather {
-  background-color: aquamarine;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
 }
