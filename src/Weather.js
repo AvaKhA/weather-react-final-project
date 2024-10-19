@@ -18,23 +18,25 @@ export default function Weather() {
         </div>
       </form>
       <div class="row first-row">
-        <div class="col text-start">
-          <ul>
+        <div class="col ">
+          <ul className="WeatherInfo">
             <li className="CityName">Tehran</li>
-            <li className="WeatherInfo">Saturday 8:00</li>
-            <li className="WeatherInfo">Mostly cloudy</li>
+            <li>Saturday 8:00</li>
+            <li>Mostly cloudy</li>
           </ul>
         </div>
         <div class="col">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt="weather icon"
-          ></img>
-          <span className="TodayTemperature">18</span>
-          <span>°C</span>
+          <div className="TodayTemperature">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weather icon"
+            ></img>
+            <span className="TemperatureValue">18</span>
+            <span className="TemperatureUnit">°C</span>
+          </div>
         </div>
         <div class="col">
-          <ul>
+          <ul className="WeatherInfo">
             <li>Precipitation: 1%</li>
             <li>Humidity: 15%</li>
             <li>Wind: 8 km/h</li>

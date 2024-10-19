@@ -1,3 +1,8 @@
+.container {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -16,8 +21,21 @@ ul {
 
 .WeatherInfo {
   font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .TodayTemperature {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.TodayTemperature .TemperatureValue {
+  font-size: 40px;
+}
+
+.TodayTemperature .TemperatureUnit {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
 }
