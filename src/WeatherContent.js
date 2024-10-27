@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import FormatDate from "./FormatDate";
+import UnitConversion from "./UnitConversion";
 
 export default function WeatherContent(props) {
   return (
@@ -17,8 +18,8 @@ export default function WeatherContent(props) {
       <div class="col">
         <div className="TodayTemperature">
           <img src={props.data.icon} alt="weather icon"></img>
-          <span className="TemperatureValue">{props.data.temperature}</span>
-          <span className="TemperatureUnit">°C</span>
+
+          <UnitConversion data={props.data.temperature} />
         </div>
       </div>
       <div class="col">

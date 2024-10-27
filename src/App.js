@@ -12,6 +12,7 @@ function App() {
             href="https://github.com/AvaKhA/weather-react-final-project"
             target="_blank"
             rel="noreferrer"
+            class="link-offset-2 link-underline link-underline-opacity-0"
           >
             open-sourced on GitHub!
           </a>

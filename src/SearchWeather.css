@@ -35,7 +35,7 @@ ul {
 }
 
 .TodayTemperature .TemperatureUnit {
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
   top: -5px;
 }
