@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./Weather.css";
-import FormatDate from "./FormatDate";
 import { useState } from "react";
 import WeatherContent from "./WeatherContent";
 import WeatherForecast from "./WeatherForecast";
