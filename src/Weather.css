@@ -39,3 +39,17 @@ ul {
   position: relative;
   top: -5px;
 }
+
+.ForecastDay {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.ForecastTemperature {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.ForecastTemperature .Max {
+  font-weight: 400;
+}

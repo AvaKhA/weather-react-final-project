@@ -1,12 +1,14 @@
 import React from "react";
 import axios from "axios";
-import "./SearchWeather.css";
+import "./Weather.css";
 import FormatDate from "./FormatDate";
 import { useState } from "react";
 import WeatherContent from "./WeatherContent";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [weatherForecast, setWeatherForecast] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
@@ -22,10 +24,19 @@ export default function Weather(props) {
     });
   }
 
+  function handleForecast(response) {
+    setWeatherForecast({
+      ready: true,
+      forecast: response.data,
+    });
+  }
+
   function search() {
     const apiKey = "4t9745130oa799ebb6790aa4023f7f9a";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrlForecast).then(handleForecast);
   }
 
   function handleSubmit(event) {
@@ -55,6 +66,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherContent data={weatherData} />
+        <WeatherForecast data={weatherForecast} />
       </div>
     );
   } else {
