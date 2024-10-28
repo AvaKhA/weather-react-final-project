@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import react from "react";
 import FormatForecastDate from "./FormatForecastDate";
 import "./Weather.css";
 

@@ -18,7 +18,6 @@ export default function UnitConversion(props) {
         <span className="TemperatureUnit">
           ℃|
           <a
-            href="#"
             onClick={showFahrenheit}
             class="link-offset-2 link-underline link-underline-opacity-0"
           >
@@ -36,7 +35,6 @@ export default function UnitConversion(props) {
         <span className="TemperatureUnit">
           {" "}
           <a
-            href="#"
             onClick={showCelsius}
             class="link-offset-2 link-underline link-underline-opacity-0"
           >
